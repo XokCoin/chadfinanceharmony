@@ -194,17 +194,22 @@ const Stake: React.FC<StakeProps> = ({ basicInfo, pool, prices }) => {
 
             <div tw="flex flex-col -space-y-2 text-lg">
                 <span>
-                    APR: {isSet(poolInfo.apr) ? poolInfo.apr + "%" : "loading" }
+                    APR: CHAD% 
                 </span>
                 <span>
                     EARN: {basicInfo.earn}
                 </span>
                 <span>
                     DEPOSIT FEE: {isSet(fee) ? fee + "%" : "loading"}<br />
+                </span> 
+                {/*
+                <span>
+                    APR: {isSet(poolInfo.apr) ? poolInfo.apr + "%" : "loading" }
                 </span>
                 <span>
                     TVL: {isSet(poolInfo.tvl) ? "$" + poolInfo.tvl : "loading"}
                 </span>
+                */ }
             </div>
 
             <span tw="text-blue-700 text-2xl"> {basicInfo.earn} earned</span>

@@ -54,7 +54,7 @@ function HeroSection() {
                             <span tw="text-3xl text-white">Fucking TVL</span>
                             <Counter value={tvl} />
                             <span tw="text-3xl text-white">Fucking $Chad Burnt</span>
-                            <Counter value={chadBurnt} />
+                            <Counter value={chadBurnt}/>
                         </div>
                     </div>
                 </div>
@@ -62,9 +62,11 @@ function HeroSection() {
                 <div tw="flex flex-col items-center">
                     <span tw="text-9xl text-white">CHAD</span>
                     <span tw="-mt-12 font-size[76px] text-white"> FINANCE</span>
+                    {/*
                     <div tw="flex items-end -mt-6 -mr-24">
                         <img src="/assets/images/fantom1.png" alt="" />
-                    </div>
+                    </div> 
+                    */}
                 </div>
 
             </div>
