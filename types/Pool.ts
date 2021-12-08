@@ -51,7 +51,7 @@ class Pool {
     const totalAllocPoints: ethers.BigNumber = await this.masterChad.totalAllocPoint()
     const poolAlloc = ethers.BigNumber.from(this.allocationPoints)
     const chadPerBlock: ethers.BigNumber = await this.masterChad.ChadPerBlock()
-    const secondsInYear = ethers.BigNumber.from(60 * 60 * 24 * 365) // We make assumption that block time is 1 second
+    const secondsInYear = ethers.BigNumber.from(60 * 60 * 24 * 182) // We make assumption that block time is 2 seconds
     const chadRewardsInYear = chadPerBlock.mul(secondsInYear).mul(poolAlloc).div(totalAllocPoints)
     const divider = ethers.BigNumber.from("1" + "0".repeat(18))
 
@@ -62,7 +62,7 @@ class Pool {
     const tvlAsNumber = parseFloat(this.tvl)
     const apr = rewardsValueAsNumber / tvlAsNumber * (100)
 
-    this.apr = apr.toFixed(2)
+    this.apr = apr.toLocaleString('en-US', { style: 'currency', currency: 'USD'})
 
     return this.apr
   }

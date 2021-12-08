@@ -31,11 +31,13 @@ const StakeLp: React.FC<StakeLpProps> = ({ toggle, setToggle, pool, basicInfo, o
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const signer = provider.getSigner()
 
+    {/*
     useEffect(() => {
         const userBalanceInWallet = ethers.utils.formatUnits(pool.stakedToken.balanceInUserWallet)
         setTokensAvailable(userBalanceInWallet)
         handleTokensStaked()
     }, [pool])
+    */ }
 
     if (isDeposit) {
         console.log('depositMode')
