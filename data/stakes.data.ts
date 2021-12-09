@@ -4,7 +4,7 @@ export const stakesdata = [
         first: "chad",
         earn: "Chad",
         pid: 0,
-        lpTokenAddress: "0x107fBFEe852fE413EBAA1551015944D72F90767C",
-        getLP: "https://exchange.paintswap.finance/#/swap?outputCurrency=0x107fBFEe852fE413EBAA1551015944D72F90767C"
+        lpTokenAddress: "0x6bAC77af0ceDD50356C90302993B67fea677570D",
+        getLP: "https://game.defikingdoms.com/#/marketplace"
     },
 ]

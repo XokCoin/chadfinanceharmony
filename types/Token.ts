@@ -35,7 +35,7 @@ class Token {
   }
 
   async getTvl(prices: Map<string, ethers.BigNumber>): Promise<string> {
-    const CHAD_MASTER_ADDRESS = "0x23c29a9a56D40507149059D3D4dB5a8FF342D366"
+    const CHAD_MASTER_ADDRESS = "0x0e9160374a49FE5EF8117Edd3053d38028354702"
 
     let stringifiedTvl
 
@@ -56,7 +56,7 @@ class Token {
   }
 
   async getUpdated(userWalletAddress: string): Promise<Token> {
-    const CHAD_MASTER_ADDRESS = "0x23c29a9a56D40507149059D3D4dB5a8FF342D366"
+    const CHAD_MASTER_ADDRESS = "0x0e9160374a49FE5EF8117Edd3053d38028354702"
     const promiseResults = await Promise.all([getTokenBalance(this.contract, CHAD_MASTER_ADDRESS), getTokenBalance(this.contract, userWalletAddress)])
     const updatedStakeAmount = promiseResults[0]
     const updatedBalanceInUserWallet = promiseResults[1]

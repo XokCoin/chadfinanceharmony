@@ -60,7 +60,7 @@ export default function Home() {
           <div tw="flex flex-col items-center space-y-2">
             <img tw="w-28" src="/assets/icons/CHADLargeLight.svg" alt="" />
             <div tw="border-2 border-white rounded-xl py-2 px-3 text-3xl text-white hover:(bg-white color[#004FCE])">
-              <a href="https://exchange.paintswap.finance/#/swap?outputCurrency=0x107fBFEe852fE413EBAA1551015944D72F90767C" target="_blank">
+              <a href="https://exchange.paintswap.finance/#/swap?outputCurrency=0x6bAC77af0ceDD50356C90302993B67fea677570D" target="_blank">
                 BUY $CHAD
               </a>
             </div>

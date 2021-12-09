@@ -38,7 +38,7 @@ class LpToken extends Token {
     const lpTvl = token0Value.add(token1Value)
 
     if (this.stakedOnFarm === null) {
-      const CHAD_MASTER_ADDRESS = "0x23c29a9a56D40507149059D3D4dB5a8FF342D366"
+      const CHAD_MASTER_ADDRESS = "0x0e9160374a49FE5EF8117Edd3053d38028354702"
       const stakedAmount = await getTokenBalance(this.contract, CHAD_MASTER_ADDRESS)
       this.stakedOnFarm = stakedAmount
     }
@@ -50,7 +50,7 @@ class LpToken extends Token {
   }
 
   async getUpdated(userWalletAddress): Promise<LpToken> {
-    const CHAD_MASTER_ADDRESS = "0x23c29a9a56D40507149059D3D4dB5a8FF342D366"
+    const CHAD_MASTER_ADDRESS = "0x0e9160374a49FE5EF8117Edd3053d38028354702"
     const updatedStakeAmount = await getTokenBalance(this.contract, CHAD_MASTER_ADDRESS)
     const updatedBalanceInUserWallet =  await getTokenBalance(this.contract, userWalletAddress)
     const reserves = await this.contract.getReserves()

@@ -7,8 +7,17 @@ const farmsdata: BasicInfo[] = [
         approved: false,
         earn: "Chad",
         pid: 1,
-        lpTokenAddress: "0xb35daa37187dc233e4f5e75c203a366d46cb2d2a",
-        getLP: "https://exchange.paintswap.finance/#/add/0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83/0x107fBFEe852fE413EBAA1551015944D72F90767C"
+        lpTokenAddress: "0x9082E1b2996691E4c5434355ee1B73372f8f3519",
+        getLP: "https://game.defikingdoms.com/#/marketplace"
+    },
+    {
+        first: "UST",
+        second: "Chad",
+        approved: false,
+        earn: "Chad",
+        pid: 2,
+        lpTokenAddress: "0x573dde4bfd787584408594c78dc56ebe6bb2fe1f",
+        getLP: "https://game.defikingdoms.com/#/marketplace"
     }
 
 

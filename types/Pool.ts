@@ -47,7 +47,7 @@ class Pool {
   }
 
   async updateApr(prices: Map<string, ethers.BigNumber>) {
-    const chadTokenAddress = "0x107fBFEe852fE413EBAA1551015944D72F90767C"
+    const chadTokenAddress = "0x6bAC77af0ceDD50356C90302993B67fea677570D"
     const totalAllocPoints: ethers.BigNumber = await this.masterChad.totalAllocPoint()
     const poolAlloc = ethers.BigNumber.from(this.allocationPoints)
     const chadPerBlock: ethers.BigNumber = await this.masterChad.ChadPerBlock()
